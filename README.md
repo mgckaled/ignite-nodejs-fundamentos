@@ -3,7 +3,7 @@
 <!-- markdownlint-disable MD041 -->
 
 <div align="center">
-   <img alt="Node.js" src=".github/assets/nodejs-logo.jpg" width="40%"/>
+   <img alt="Node.js" src=".github/assets/nodejs-logo.jpg" width="25%"/>
 </div>
 <br>
 
