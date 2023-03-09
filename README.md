@@ -33,6 +33,8 @@
 
 Desenvolveu-se neste projeto uma API RESTful com Node.js focada nos fundamentos da tecnologia, sem frameworks ou bibliotecas externas. Módulos internos como `HTTP`, `Crypto` e `File System` foram utilizados. Deu-se também profundidade em `Streams` no Node.js em como aplicá-las para a realização de operações assíncronas e parcias dentro do back-end.
 
+Análises e comentários sobre o código [AQUI](/.github/docs/index.md).
+
 ## Tecnologias
 
 - [Node.js](https://nodejs.org/en/)
@@ -44,5 +46,5 @@ Distribuído sob a licença _MIT_. Veja [LICENSE](LICENSE) para mais informaçõ
 ---
 
 <h5 align="center">
-  &copy;2022 - <a href="https://github.com/mgckaled/">Marcel Kaled</a>
+  &copy;2023 - <a href="https://github.com/mgckaled/">Marcel Kaled</a>
 </h5>
