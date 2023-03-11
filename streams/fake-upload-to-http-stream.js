@@ -14,7 +14,7 @@ class OneToHundredStream extends Readable {
 
         this.push(buf)
       }
-    }, 1000)
+    }, 5)
   }
 }
 
@@ -23,3 +23,9 @@ fetch('http://localhost:3334', {
   body: new OneToHundredStream(),
   duplex: 'half',
 })
+  .then(res => {
+    return res.text()
+  })
+  .then(data => {
+    console.log(data)
+  })
