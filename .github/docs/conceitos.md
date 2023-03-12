@@ -14,4 +14,19 @@
 - _Route Parameters_: São parâmetros definidos em uma rota de um aplicativo web que permitem que o servidor entenda e manipule diferentes solicitações de acordo com a entrada do usuário. Esses parâmetros fazem parte da própria URL e são definidos por meio de um padrão específico na rota, geralmente especificado entre colchetes {}. Por exemplo, em uma rota como "/produtos/{id}", o parâmetro "id" é um route parameter que pode ser preenchido com diferentes valores de acordo com a solicitação do usuário. Os route parameters são usados ​​para capturar informações específicas do usuário, como o ID de um produto em uma loja virtual, o nome de usuário em uma rede social, a data de nascimento de um usuário ou qualquer outra informação que possa ser necessária para personalizar a resposta do servidor web. Esses parâmetros são usados em aplicações web para permitir que as URLs sejam mais amigáveis e significativas para os usuários e para tornar a navegação em um aplicativo mais intuitiva e fácil de usar. Eles também são úteis para garantir que o servidor receba a informação correta e possa retornar a resposta adequada.
 - _Request Body_: é uma parte de uma requisição HTTP que contém dados adicionais enviados pelo cliente para o servidor. Esses dados podem incluir informações do usuário, como formulários preenchidos, JSON, arquivos de imagem, entre outros. O request body é usado em uma variedade de aplicações web, desde a autenticação de usuários até o armazenamento de informações em um banco de dados. Ele é geralmente enviado como parte de uma requisição POST, PUT ou PATCH. O formato dos dados enviados no request body depende do tipo de aplicação. Por exemplo, em uma API RESTful, o formato mais comum é o JSON, enquanto em um formulário da web, os dados geralmente são enviados no formato x-www-form-urlencoded. O servidor pode então usar esses dados para tomar decisões e responder de acordo. Por exemplo, um formulário de login pode enviar o nome de usuário e senha no request body para autenticar o usuário e retornar um token de autenticação.
 
+**Expressões regulares**: Expressões regulares, também conhecidas como regex (abreviação de regular expression), são padrões de texto que definem uma correspondência com uma ou mais sequências de caracteres em um texto maior.
+
+Elas são amplamente utilizadas em processamento de texto, busca e substituição de padrões de texto, análise de dados, validação de entrada de usuários e muito mais. As expressões regulares são compostas por caracteres literais (que correspondem exatamente a um caractere específico) e metacaracteres (que representam um conjunto de caracteres ou uma operação especial). Por exemplo, o metacaractere "." (ponto) representa qualquer caractere único e o metacaractere "\*" (asterisco) representa zero ou mais ocorrências do caractere anterior. Aqui estão alguns exemplos de expressões regulares comuns:
+
+- `\d`: corresponde a qualquer dígito (0-9).
+- `\w`: corresponde a qualquer caractere alfanumérico (letra ou dígito).
+- `\s`: corresponde a qualquer espaço em branco (espaço, tabulação, quebra de linha etc.).
+- `^`: corresponde ao início de uma linha.
+- `$`: corresponde ao final de uma linha.
+- `\b`: corresponde a uma borda de palavra (um limite entre um caractere de palavra e um caractere que não é uma palavra).
+
+Por exemplo, a expressão regular `\d{3}-\d{2}-\d{4}` corresponde ao formato de um número de Segurança Social nos EUA (xxx-xx-xxxx), enquanto a expressão regular `^[A-Z]{2}\d{2}\w{2}\d{3}$` corresponde a um formato de placa de carro no Brasil (ex: AA12BB123).
+
+As expressões regulares são suportadas em muitas linguagens de programação, ferramentas de linha de comando e editores de texto. Aprender a usar expressões regulares pode ajudar a tornar o processamento de texto mais eficiente e preciso.
+
 Voltar para o [`index`](./index.md)
