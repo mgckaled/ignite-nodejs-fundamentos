@@ -1,3 +1,4 @@
+import { randomUUID } from 'node:crypto'
 import http from 'node:http'
 
 import { Database } from './database.js'
@@ -22,7 +23,7 @@ const server = http.createServer(async (req, res) => {
     const { name, email } = req.body
 
     const user = {
-      id: 1,
+      id: randomUUID(),
       name,
       email,
     }
@@ -30,10 +31,6 @@ const server = http.createServer(async (req, res) => {
     database.insert('users', user)
 
     return res.writeHead(201).end()
-  }
-
-  if (req.body === null) {
-    return res.writeHead(400).end('Missing body with email and name.')
   }
 
   return res.writeHead(404).end()
